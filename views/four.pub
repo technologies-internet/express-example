@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charenc="utf8")
+    title Page "four  
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+  body 
+    h1 Page "/four"
+    div La page avec 
+      span(style="font-family:'Lucida Console', monospace") JQuery
+    pre
+      |    app.get("/four", function(req,res) {
+      |      res.render("four.pug");
+      |    });
+    div(id="time")
+    script.
+      setInterval(function(){ 
+        $("#time").html("La date est: <mark>" + new Date()+"</mark>");
+      }, 1000);
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "Exemple d'un serveur WEB avec `express`, `pug`, et `browserify`.",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^16.1.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technologies-internet/express-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technologies-internet/express-example/issues"
+  },
+  "homepage": "https://github.com/technologies-internet/express-example#readme"
+}

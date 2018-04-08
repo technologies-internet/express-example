@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charenc="utf8")
+    title Page "two/#{name}"  
+  body 
+    h1 Page "/two/#{name}"
+    div La page, c.-à-d., le HTML, est générée en utilisant 
+      span(style="font-family:'Lucida Console', monospace") jade/pug  
+      i templating engine,  
+      | à partir du fichier 
+      span(style="font-family:'Lucida Console', monospace") ./views/two.pug.
+    pre
+      |    app.get("/two/:name", function(req,res) {
+      |      res.render("two.pug",{name: req.params.name});
+      |    });

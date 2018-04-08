@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charenc="utf8")
+    title Page "three"  
+  body 
+    h1 Page "/three"
+    div La page genérée par  
+      span(style="font-family:'Lucida Console', monospace") jade/pug 
+      | avec javascript (./views/three.pug).
+    pre
+      |    app.get("/three", function(req,res) {
+      |      res.render("three.pug");
+      |    });
+    div(id="time")
+    script.
+      var div_time = document.getElementById("time");
+      setInterval(function(){ 
+        div_time.innerHTML = "La date est: <mark>" + new Date()+"</mark>";
+      }, 1000);
+
+
