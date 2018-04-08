@@ -30,4 +30,6 @@ app.get("/four", function(req,res) {
 
 app.use(express.static("./static"));
 
-app.listen(8991);
+app.listen(8991, function(){
+    console.log("Application is running: <http://localhost:8991/>");
+});
