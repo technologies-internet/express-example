@@ -7,11 +7,11 @@
     "browserify": "^16.1.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
-    "pug": "^2.0.3"
+    "pug": "^3.0.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "browserify ./client/mon-fichier.js -o ./static/bundle.js"
   },
   "repository": {
     "type": "git",

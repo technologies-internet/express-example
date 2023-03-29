@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head><meta charenc="utf8">
+  <head>
+    <meta charenc="utf8" />
     <title>Exemple avec browserify</title>
   </head>
   <body>
     <h1>Exemple avec <mark>browserify</mark></h1>
-    <p>Le fichier <tt>./static/bundle.js</tt> est généré à partir de fichier
-      <tt>./client/mon-fichier.js</tt> par</p>
+    <p>
+      Le fichier <tt>./static/bundle.js</tt> est généré à partir de fichier
+      <tt>./client/mon-fichier.js</tt> par
+    </p>
     <pre>
       > npm install browserify jquery
       > ./node_modules/.bin/browserify ./client/mon-fichier.js -o ./static/bundle.js 
     </pre>
-    <div id="time"/>
+    <div id="time" />
     <script src="./bundle.js"></script>
   </body>
 </html>
-

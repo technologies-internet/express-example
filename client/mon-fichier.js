@@ -1,5 +1,5 @@
-var $ = require("jquery");
+const $ = require("jquery");
 
-setInterval(function(){ 
-        $("#time").html("La date est: <mark>" + new Date()+"</mark>");
-      }, 1000);
+setInterval( () =>
+  $("#time").html("La date est: <mark>" + new Date() + "</mark>")
+, 1000);

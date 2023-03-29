@@ -11,6 +11,6 @@ html
       | à partir du fichier 
       span(style="font-family:'Lucida Console', monospace") ./views/two.pug.
     pre
-      |    app.get("/two/:name", function(req,res) {
-      |      res.render("two.pug",{name: req.params.name});
-      |    });
+      |    app.get( "/two/:name", ( req, res ) =>
+      |      res.render( "two.pug", { name: req.params.name } )
+      |    );

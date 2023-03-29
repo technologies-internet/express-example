@@ -10,13 +10,11 @@ html
       span(style="font-family:'Lucida Console', monospace") JQuery
       |  (./views/four.pug).
     pre
-      |    app.get("/four", function(req,res) {
-      |      res.render("four.pug");
-      |    });
+      |    app.get("/four", (req,res) => res.render("four.pug"));
     div(id="time")
     script.
-      setInterval(function(){ 
-        $("#time").html("La date est: <mark>" + new Date()+"</mark>");
-      }, 1000);
+      setInterval(() =>
+        $("#time").html("La date est: <mark>" + new Date()+"</mark>")
+      , 1000);
 
 
